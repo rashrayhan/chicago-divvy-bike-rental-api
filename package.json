@@ -4,7 +4,7 @@
   "description": "API for the Chicago Divvy Bike Rental platform using Divvy API and trip data",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./server/test/ --timeout 30000",
     "start": "node ./server/app.js",
     "devStart": "nodemon ./server/app.js"
   },
@@ -30,6 +30,9 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^7.2.0",
     "nodemon": "^2.0.4"
   }
 }
