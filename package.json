@@ -1,0 +1,35 @@
+{
+  "name": "chicago-divvy-bike-rental-api",
+  "version": "1.0.0",
+  "description": "API for the Chicago Divvy Bike Rental platform using Divvy API and trip data",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/app.js",
+    "devStart": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rashrayhan/chicago-divvy-bike-rental-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rashrayhan/chicago-divvy-bike-rental-api/issues"
+  },
+  "homepage": "https://github.com/rashrayhan/chicago-divvy-bike-rental-api#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "csv-parser": "^2.3.2",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
