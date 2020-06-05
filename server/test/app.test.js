@@ -5,6 +5,7 @@ let should = chai.should();
 const chaiHttp = require("chai-http");
 chai.use(chaiHttp);
 
+//Complete Test Coverage 
 describe("/GET API methods", () => {
     it("generates token for the user", done => {
         chai
