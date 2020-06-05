@@ -43,9 +43,6 @@ module.exports.setUpExpress = ()=>{
     app.use(morgan('combined', { stream: accessLogStream }));
 
     //Routes
-    app.get("/", (req, res) => {
-        res.json({ status: "success", message: "Welcome To Testing API" });
-      });
     app.use('/api/v1/auth', require('../routes/userRoutes'));
     app.use('/api/v1/station', require('../routes/stationRoutes'));
 
