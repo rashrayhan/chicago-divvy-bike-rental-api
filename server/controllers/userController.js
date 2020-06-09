@@ -14,19 +14,19 @@ module.exports.login = async (req, res) => {
     }
 }
 
-module.exports.testing = (req, res) => {
-    try {
-        jwt.verify(req.token, 'secretkey', (err, user)=>{
-            if(err){
-                res.sendStatus(403);
-            }else{
-                res.json({
-                    message: 'this works',
-                    user
-                })
-            }
-        }) 
-    } catch (error) {
-        res.status(500).json({message: error.message});
-    }
-}
+// module.exports.testing = (req, res) => {
+//     try {
+//         jwt.verify(req.token, 'secretkey', (err, user)=>{
+//             if(err){
+//                 res.sendStatus(403);
+//             }else{
+//                 res.json({
+//                     message: 'this works',
+//                     user
+//                 })
+//             }
+//         }) 
+//     } catch (error) {
+//         res.status(500).json({message: error.message});
+//     }
+// }
